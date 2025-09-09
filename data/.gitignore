@@ -1,0 +1,15 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.log
+.ipynb_checkpoints/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Data (CSV + H5 kept local, not committed)
+data/
+
+# Model artifacts (tracked via Git LFS)
+models/*.pth
