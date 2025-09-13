@@ -68,9 +68,6 @@ To run the earlier end‑to‑end pipeline with focal loss/Adam and quick infere
 - **`metrics.pth`**  
   A small PyTorch checkpoint containing lists of `train_losses`, `val_losses`, `train_accuracies`, `val_accuracies` so you can re‑plot curves without re‑training. Optional but nice to keep under `models/` (LFS is OK but not strictly required if it’s small). 
 
-### Should you upload the CSVs?
-**Yes**, include the CSVs (they’re small) so others can inspect the splits/labels and replicate indexing. Keep all the `*.h5` datasets **out** of the repo; link to their sources or a cloud download instead. Your code will still run if the user downloads the H5 files locally and sets `file_path` accordingly. 
-
 ## ⬆️ Git LFS & .gitignore
 This repo is configured to:
 - track large binaries (`*.pth`) with **Git LFS**,
